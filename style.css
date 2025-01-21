@@ -1,0 +1,425 @@
+
+/* Apply the custom font to the h1 */
+/* Style for the title with logo */
+.title {
+  padding-inline-end: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 60px; /* Slightly reduced for balance */
+  color: #211e1e; /* Professional dark color */
+  text-align: center;
+  display: flex; /* Flexbox for logo and text alignment */
+  justify-content: center; /* Center aligns the title with logo */
+  align-items: center; /* Aligns logo vertically with text */
+  margin-top: 20px; /* Adjust spacing above the title */
+  letter-spacing: 3px; /* Increased spacing for elegance */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds subtle depth to the text */
+  line-height: 1.2; /* Adjust the line height for better alignment */
+}
+
+/* Style the logo */
+.logo {
+  width: 70px; /* Adjust width */
+  height: 70px; /* Adjust height */
+  margin-right: 15px; /* Space between logo and text */
+  border-radius: 50%; /* Makes the logo circular */
+  object-fit: cover; /* Ensures the image fits the dimensions */
+  border: 2px solid #211e1e; /* Adds a thin border for emphasis */
+  vertical-align: middle; /* Ensures alignment with text baseline */
+}
+
+
+/* Optional: Header styling with gradient */
+header {
+  background: linear-gradient(to right, #494949, #e7dede); /* Subtle gradient */
+  padding: 20px 0; /* Add padding to separate content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+/* Apply background image to the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+}
+/* Style the logo */
+
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('bag.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1; /* To place it behind other content */
+}
+
+.overlay {
+  background-color: #d69bd480; /* Semi-transparent black overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* Header styling */
+header {
+  background-color: #ece6ea; /* Replace with your header image */
+  background-size: cover;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  padding: 5px;
+}
+
+/* Category button styling */
+.categories {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.categories button {
+  padding: 20px; /* Increase padding for more space inside the button */
+  margin: 0 15px; /* Increased margin for more space between buttons */
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Increase font size for better readability */
+  background-size: cover; /* Ensures the image covers the entire button */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Centers the text inside the button */
+  width: 150px; /* Increase width of the button */
+  height: 150px; /* Increase height of the button */
+  border-radius: 8px; /* Optional: adds rounded corners for a nicer look */
+  transition: transform 0.3s ease; /* Optional: adds a hover effect */
+}
+
+.categories button:hover {
+  background-color: #555;
+}
+
+/* Add custom background images for category buttons */
+button[data-category="Makeup"] {
+  background-image: url('makeup.jpg'); /* Replace with your Makeup icon */
+}
+
+button[data-category="Skincare"] {
+  background-image: url('skin.jpg'); /* Replace with your Skincare icon */
+}
+
+button[data-category="Nail Care"] {
+  background-image: url('nail.jpg'); /* Replace with your Nail Care icon */
+}
+
+button[data-category="Hair Care"] {
+  background-image: url('hair.jpg'); /* Replace with your Hair Care icon */
+}
+
+/* Product card styling */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product button:hover {
+  background-color: #555;
+
+}
+
+.social-media {
+  text-align: center; /* Center align icons */
+  margin: 20px 0; /* Add spacing */
+}
+
+.social-media a {
+  margin: 0 10px; /* Space between icons */
+  color: #333; /* Default icon color */
+  font-size: 30px; /* Size of the icons */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-media a:hover {
+  color: #007bff; /* Change color on hover */
+}
+/* Footer Section */
+.contact-info {
+  background: linear-gradient(to right, #ece6ea, #f2eeee); /* Gradient background */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-top: 50px;
+}
+
+.contact-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.contact-info .social-icons {
+  margin-top: 10px;
+}
+
+.contact-info .social-icons a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-info .social-icons a img:hover {
+  transform: scale(1.2); /* Zoom-in effect on hover */
+}
+.cart-section {
+  max-width: 400px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.cart-section h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.cart-item-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-item-price {
+  font-size: 14px;
+  color: #666;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-actions button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item-actions button:hover {
+  background-color: #bbb;
+}
+
+.cart-summary {
+  text-align: center;
+}
+
+.cart-summary p {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#checkout-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-button:hover {
+  background-color: #0056b3;
+}
+/* Cart Button Fixed Positioning */
+#cartIcon {
+  position: fixed;
+  top: 20px; /* Adjust position from top */
+  right: 20px; /* Adjust position from right */
+  background-color: #0f1011; /* Blue background for prominence */
+  color: white; /* White text/icon */
+  padding: 15px 20px; /* Padding for the button size */
+  border: none;
+  font-size: 20px; /* Size of the text/icon */
+  border-radius: 50%; /* Round shape for the button */
+  cursor: pointer;
+  z-index: 10; /* Ensure it's always on top of other content */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition effects */
+}
+
+#cartIcon i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+#cartIcon:hover {
+  background-color: #0b0b0c; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+#cartIcon:focus {
+  outline: none; /* Removes focus outline */
+}
+/* Main Background */
+body {
+
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Checkout Form */
+.checkout-form {
+  width: 70%; /* Reduce the width */
+  max-width: 400px; /* Limit the maximum width */
+  margin: 100px auto; /* Center the form with some top margin */
+  padding: 20px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Border for the form */
+  border-radius: 8px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for emphasis */
+  position: relative; /* Positioning for z-index */
+}
+
+/* Overlay effect for background */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: -1; /* Ensure the overlay stays behind the form */
+}
+
+/* Checkout Form Heading */
+.checkout-form h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form Labels */
+.checkout-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Form Inputs */
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form input[type="tel"],
+.checkout-form input[type="address"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Submit Button */
+.checkout-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.checkout-form button:hover {
+  background-color: #0056b3;
+}
+
+

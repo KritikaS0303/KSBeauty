@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> <img src="logo.png" alt="Logo" class="logo">KS Beauty</h1>
+        <div class="categories">
+            <button data-category="All">All</button>
+            <button data-category="Makeup">Makeup</button>
+            <button data-category="Skincare">Skincare</button>
+            <button data-category="Nail Care">Nail Care</button>
+            <button data-category="Hair Care">Hair Care</button>
+        </div>
+        <button id="cartIcon" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i> Cart
+        </button>
+    </header>
+
+    <div id="cartSection" class="cart-section">
+        <h2>Your Cart</h2>
+        
+        <div id="cartItems" class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-summary">
+            <p>Total Items: <span id="cartCount">0</span></p>
+            <p>Total Price: ₹<span id="cartTotal">0.00</span></p>
+            <button id="clearCartBtn">Clear Cart</button>
+            <button id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <section>
+        <div id="productList" class="product-list">
+            <!-- Product list will be dynamically populated here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    
+
+    <footer class="contact-info">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> support@ksbeauty.com</p>
+        <p><strong>Phone:</strong> +91-9260968575</p>
+        <p><strong>Address:</strong> 123 Beauty Lane, Glam City, India</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="insta.png" alt="Instagram"></a>
+            <a href="#"><img src="linkdin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>

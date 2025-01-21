@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: green;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a {
+            font-size: 1.2em;
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thank you for your order!</h1>
+    <p>Your order has been successfully placed. We will send you an email confirmation soon.</p>
+    <button id="goBackBtn">Go Back to Home</button>
+
+<script>
+    document.getElementById('goBackBtn').addEventListener('click', function() {
+      window.location.href = 'index2.html'; // Redirect to index2.html (home page)
+    });
+</script>
+
+      
+
+
+</body>
+</html>
