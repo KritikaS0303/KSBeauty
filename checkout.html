@@ -97,7 +97,7 @@
             <div  id="checkoutCartItems" class="cart-items">
                 <!-- Cart items will be displayed here dynamically -->
             </div>
-            <p class="total">Total Price: $<span id="checkoutTotalPrice">0.00</span></p>
+            <p class="total">Total Price: ₹<span id="checkoutTotalPrice">0.00</span></p>
         </div>
 
         <!-- Form for Checkout -->
@@ -140,7 +140,7 @@
                 cartItem.classList.add('cart-item');
                 cartItem.innerHTML = `
                     <span>${item.name}</span>
-                    <span>$${item.price}</span>
+                    <span>₹${item.price}</span>
                 `;
                 cartItemsContainer.appendChild(cartItem);
                 totalPrice += item.price;

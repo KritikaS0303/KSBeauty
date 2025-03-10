@@ -3,84 +3,84 @@
       "id": 1,
       "name": "Lipstick",
       "category": "Makeup",
-      "price": 5,
+      "price": 500,
       "image": "lips.jpg"
   },
   {
       "id": 2,
       "name": "Mascara",
       "category": "Makeup",
-      "price": 7,
+      "price": 730,
       "image": "mascara.jpg"
   },
   {
       "id": 3,
       "name": "Foundation",
       "category": "Makeup",
-      "price": 10,
+      "price": 1000,
       "image": "foundation.jpg"
   },
   {
       "id": 4,
       "name": "Serum",
       "category": "Skincare",
-      "price": 15,
+      "price": 500,
       "image": "face.jpg"
   },
   {
       "id": 5,
       "name": "Scrub",
       "category": "Skincare",
-      "price": 12,
+      "price": 230,
       "image": "scrub.jpeg"
   },
   {
       "id": 6,
       "name": "Massager",
       "category": "Skincare",
-      "price": 25,
+      "price": 250,
       "image": "rollar.jpg"
   },
   {
       "id": 7,
       "name": "Hair Serum",
       "category": "Hair Care",
-      "price": 20,
+      "price": 400,
       "image": "h.jpg"
   },
   {
       "id": 8,
       "name": "Straightener",
       "category": "Hair Care",
-      "price": 30,
+      "price": 1530,
       "image": "str2.jpg"
   },
   {
       "id": 9,
       "name": "Comb",
       "category": "Hair Care",
-      "price": 8,
+      "price": 100,
       "image": "comb.jpg"
   },
   {
       "id": 10,
       "name": "Nail Paint",
       "category": "Nail Care",
-      "price": 6,
+      "price": 60,
       "image": "nail2.jpg"
   },
   {
       "id": 11,
       "name": "Nail Polish Remover",
       "category": "Nail Care",
-      "price": 4,
+      "price": 40,
       "image": "rem.jpg"
   },
   {
       "id": 12,
       "name": "Nail Extension",
       "category": "Nail Care",
-      "price": 15,
+      "price": 700,
       "image": "exe.webp"
   }
 ]
